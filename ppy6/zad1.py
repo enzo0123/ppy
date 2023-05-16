@@ -1,11 +1,11 @@
-from my_linked_list import Lista
+from my_linked_list import Lista, Element
 
 lista = Lista()
-lista.append(5)
-lista.append(3)
-lista.append(10)
 
-print(lista.get(2))
-print(lista)
-lista.delete(5)
+x= Element(10)
+y= Element(5)
+lista.append(x)
+lista.append(y)
+
+print(lista.get(5))
 print(lista)

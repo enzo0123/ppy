@@ -48,7 +48,10 @@ class Lista:
             current = current.nextE
 
     def append(self, e, func=None):
-        new_element = Element(e)
+        if not type(e) == Element:
+            new_element = Element(e)
+        else:
+            new_element = e
 
         if not self.head:
             self.head = new_element
